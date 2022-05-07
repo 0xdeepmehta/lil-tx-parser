@@ -1,0 +1,15 @@
+[features]
+seeds = false
+
+[programs.devnet]
+lil_tx_parser = "8PL5wn76xtHShBxYCCkVpdzVMqf8KrUdk64aS3Sscwnx"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
